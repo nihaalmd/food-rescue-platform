@@ -1,0 +1,58 @@
+.profile-page {
+  min-height: 100vh;
+}
+
+.profile-container {
+
+  max-width: 1500px;
+
+  margin: 40px auto;
+
+  padding: 0 20px;
+}
+
+.profile-container h1 {
+
+  margin-bottom: 25px;
+
+  color: var(--text-primary);
+}
+
+.profile-card {
+
+  padding: 35px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(24px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.profile-field {
+
+  margin-bottom: 24px;
+
+}
+
+.profile-field label {
+
+  display: block;
+
+  font-weight: 700;
+
+  margin-bottom: 8px;
+
+  color: var(--text-secondary);
+  line-height: 2.5;
+}
+
+.profile-field p {
+
+  font-size: 1.05rem;
+
+  color: var(--text-primary);
+  line-height: 1.5;
+}

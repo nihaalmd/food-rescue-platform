@@ -1,0 +1,91 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Light Mode (Default) */
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #eff4f7;
+  --surface: rgba(255,255,255,0.78);
+  --surface-strong: rgba(255,255,255,0.95);
+  --surface-hover: rgba(255,255,255,0.85);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #9ca3af;
+  --accent: #1d7a43;
+  --accent-soft: #22c55e;
+  --accent-alt: #f59e0b;
+  --border: rgba(0, 0, 0, 0.1);
+  --shadow: 0 24px 80px rgba(15,23,42,0.12);
+  --shadow-sm: 0 8px 24px rgba(15,23,42,0.06);
+  --radius: 32px;
+  --hero-bg: linear-gradient(135deg, #f5fbf9 0%, #e7f7ea 50%, #eafcee 100%);
+}
+
+/* Dark Mode */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --surface: rgba(30, 41, 59, 0.78);
+  --surface-strong: rgba(30, 41, 59, 0.95);
+  --surface-hover: rgba(51, 65, 85, 0.85);
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --accent: #22c55e;
+  --accent-soft: #86efac;
+  --accent-alt: #fbbf24;
+  --border: rgba(255, 255, 255, 0.1);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.2);
+  --radius: 32px;
+  --hero-bg: linear-gradient(135deg, #06202a 0%, #073b2f 50%, #08122a 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  background: radial-gradient(circle at top left, rgba(34,197,94,0.12), transparent 16%),
+    radial-gradient(circle at bottom right, rgba(245,158,11,0.10), transparent 20%),
+    var(--bg);
+  overflow-x: hidden;
+  transition: background-color 0.3s ease;
+}
+
+:root[data-theme="dark"] body {
+  background: radial-gradient(circle at top left, rgba(34,197,94,0.08), transparent 16%),
+    radial-gradient(circle at bottom right, rgba(245,158,11,0.08), transparent 20%),
+    var(--bg);
+}
+
+button,
+a,
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
