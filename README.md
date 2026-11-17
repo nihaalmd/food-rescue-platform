@@ -65,3 +65,5 @@ FeedForward aims to solve this problem by providing a centralized platform where
 
 - MongoDB Atlas
 - Mongoose
+
+<!-- ZeroUI ER-059: baseline before approval -->
